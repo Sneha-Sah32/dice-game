@@ -52,9 +52,10 @@ export default function Section2(click) {
               <button key={num} onClick={()=>handleSelect(num)} id='selection' className={selectedNumber===num?"active":""}>{num}</button>
             ))}
 
-
-            <h4>Select Number</h4>
-            <h3>You have selected: {selectedNumber}</h3>
+           <h3>
+            {selectedNumber?`You have selected: ${selectedNumber}`:"Select a Number:"}
+           </h3>
+           
         </div>
       </nav>
 
